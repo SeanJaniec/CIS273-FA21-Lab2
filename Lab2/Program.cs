@@ -26,7 +26,10 @@ namespace Lab2
             }
             if(length == 1)
             {
-
+                if( int.TryParse(s, out int value))
+                {
+                    return true;
+                }
                 return false;
             }
             else
